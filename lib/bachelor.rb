@@ -15,7 +15,7 @@ require 'pry'
 def get_first_name_of_season_winner(data, season)
   data.each do |seasons,contestants|
     if data[seasons] == season
-      data[contestants].select?(st)
+      return data[contestants].select? {|contestant| contestant["status"] == winner}
     end
   end
 end
