@@ -1,5 +1,4 @@
-
-
+=begin
 {
    "season 19":[
       {
@@ -9,9 +8,13 @@
          "occupation":"Nanny/Freelance Journalist",
          "status":""
       },
+=end
+
+require 'pry'
 
 def get_first_name_of_season_winner(data, season)
-  # code here
+  data.each do |seasons,contestants|
+    binding.pry
 end
 
 def get_contestant_name(data, occupation)
